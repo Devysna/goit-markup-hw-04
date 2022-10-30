@@ -204,6 +204,8 @@ header {
     margin-right: 10px;
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
     fill: #757575;
 }
 
@@ -222,10 +224,21 @@ header {
     margin-right: 10px;
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
     fill: #757575;
 }
 
+.site-mail:hover > .mail-icon,
+.site-mail:focus > .mail-icon,
+.site-tel:hover > .tel-icon,
+.site-tel:focus > .tel-icon {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
 
+
+/*
 .mail-icon:hover,
 .mail-icon:focus,
 .tel-icon:hover,
@@ -329,6 +342,7 @@ header {
     text-align: center;
 
     border-radius: 4px;
+    border: 0;
     box-shadow: 0px 4px 4px var(--buttom-shadow-color);
       
 }
@@ -528,13 +542,12 @@ margin-right: 10px;
     margin-right: 0;
 }
 
-
 .team-button:hover,
 .team-button:focus {
     background-color: var(--accent-color);
 }
-.team-icon:hover,
-.team-icon:focus {
+.team-button:hover > .team-icon,
+.team-button:focus > .team-icon {
     fill: var(--hero-text-color);
 }
 /*Clients*/
@@ -584,8 +597,8 @@ margin-right: 10px;
     border-color: var(--accent-color);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-button:hover > .client-icon,
+.client-button:hover > .client-icon {
     fill: var(--accent-color);
 }
 
